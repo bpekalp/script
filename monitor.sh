@@ -13,5 +13,5 @@ while true; do
         psql -d "$SQL_NAME" -U "$SQL_USERNAME" -c "INSERT INTO $SQL_TABLE (event) VALUES ('$CHANGES');"
         echo $CHANGES >>/home/gbpekalp/Masaüstü/projelog.log
     fi
-    sleep 10
+    sleep 3
 done
